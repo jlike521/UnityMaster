@@ -1,0 +1,7 @@
+#!/bin/sh
+workingdir="$PWD"
+scriptdir="`dirname $0`"
+cd "$scriptdir"
+result= exec perl jam.pl "$@"
+cd "$workingdir"
+exit $result

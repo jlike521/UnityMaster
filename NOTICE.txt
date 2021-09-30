@@ -1,0 +1,4 @@
+Notice: The Unity source code includes proprietary header files and other
+integration code from our third party middleware licensors. All such materials
+may be used solely for troubleshooting and bug fixing within Unity products and
+are Confidential Information under the parties' license agreement.

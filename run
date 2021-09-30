@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [ -z $1 ]; then
+	perl build.pl run
+else
+	case $1 in
+		--help)
+			perl build.pl $*
+			;;
+		-*)
+			perl build.pl run --runArgs="$*"
+			;;
+		*)
+			perl build.pl $*
+			;;
+	esac
+fi

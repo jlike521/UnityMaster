@@ -1,0 +1,11 @@
+# A change to this file will not make the build system re-compile things.
+# You'll likely need to recompile everything when this file changes.
+#
+# Use this file to tell clang sanitizers to ignore parts of the source code.
+# Prefer to annotate source code we can modify with UNITY_DISABLE_?SAN instead
+# of using this file.
+# For the format of entries here, see:
+# https://clang.llvm.org/docs/SanitizerSpecialCaseList.html
+
+# Disable all sanitizer checks in external code
+src:External/*
